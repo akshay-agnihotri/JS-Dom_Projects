@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: 'Roboto Flex', sans-serif;
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1250px;
+    width: 90%;
+}
+
+.sec{
+    position: relative;
+    box-shadow: 0 0 20px silver;
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center;
+}
+
+.sec > p {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    color: white;
+    /* display: none; */
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1s ease;
+}
+.sec.fullWidth > p{
+    /* display: block; */
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.bg1{
+    background-image: url(assets/bg1.jpeg);
+}
+.bg2{
+    background-image: url(assets/bg2.jpeg);
+}
+.bg3{
+    background-image: url(assets/bg3.jpeg);
+}
+.bg4{
+    background-image: url(assets/bg4.jpeg);
+}
+.bg5{
+    background-image: url(assets/bg5.jpeg);
+}
+
+
+
+@media only screen and (min-width: 1249.9px) {
+    .sec{
+        height: 450px;
+        width: 110px;
+        transition: width 0.5s ease;
+    }
+    .container{
+        gap: 20px;
+    }
+    .fullWidth{
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 1249.9px) {
+    .sec{
+        height: 400px;
+        width: 10%;
+        transition: width 0.5s ease;
+    }
+    .container{
+        gap: 2%;
+    }
+    .fullWidth{
+        width: 40%;
+    }
+}
