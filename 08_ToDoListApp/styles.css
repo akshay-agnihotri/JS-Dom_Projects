@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* , 
+*::before ,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* width: 100vw; */
+    height: 100vh;
+    background: linear-gradient(135deg ,#8052ec , #d161ff);
+}
+
+.container{
+    border: 2px solid white;
+    /* width: 40%;
+    min-width: 450px; */
+    width: 90%;
+    max-width: 600px;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    top: 50%;
+    left: 50%;
+    padding: 30px 40px;
+}
+
+#newtask{
+    position: relative;
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px  30px rgba(0, 0, 0, 0.3);
+}
+
+#newtask input{
+    width: 70%;
+    height: 45px;
+    border: 2px solid #d1d3d4;
+    padding: 12px;
+    font-family: "Kode Mono", monospace;
+    font-weight: 600;
+    color: #111111;
+    position: relative;
+    border-radius: 5px;
+}
+
+#newtask input:focus{
+    outline: none;
+    border-color: #8052ec;
+}
+
+#newtask button{
+    position: relative;
+    float: right;   /* this property will move the button in the right most part */
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #8052ec;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#tasks{
+    background-color: #fff;
+    padding: 30px 20px;
+    margin-top: 60px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+}
+
+.task{
+    background-color: white;
+    min-height: 50px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid  #d1d3d4;
+}
+
+.task span{
+    font-family:  monospace;
+    font-weight: 400;
+
+}
+
+.task button{
+    background-color: #8052ec;
+    color: white;
+    height: 50px;
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.delete{
+    cursor: pointer;
+}
